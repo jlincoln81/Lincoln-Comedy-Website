@@ -5,11 +5,11 @@
 
 backend:
   name: github
-  repo: YOUR-GITHUB-USERNAME/lincoln-comedy-website
+  repo: jlincoln81/lincoln-comedy-website
   branch: main
 
-site_url: https://thelincolncomedy.com   # change to your live address
-display_url: https://thelincolncomedy.com
+site_url: https://lincolncomedy.netlify.app   # change to your live address
+display_url: https://lincolncomedy.netlify.app
 
 # Uploaded posters are saved here and published with the site.
 media_folder: images/shows
