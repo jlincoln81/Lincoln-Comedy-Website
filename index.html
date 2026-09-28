@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Lincoln Comedy Club at Mechanics Hall | Worcester, MA</title>
+  <meta name="description" content="Live stand-up comedy inside Worcester's historic Mechanics Hall. Nationally touring headliners, New England favorites and the best of Boston's comedy scene. All shows 21+.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎤</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Karla:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="/" aria-label="The Lincoln Comedy Club, home">
+      <span class="logo-name">THE LINCOLN</span>
+      <span class="logo-sub">Comedy Club at Mechanics Hall</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="main-nav" aria-label="Main">
+      <ul>
+        <li><a href="/" aria-current="page">Home</a></li>
+        <li><a href="/#shows">Upcoming Shows</a></li>
+        <li><a href="/#venue">Venue Info</a></li>
+        <li><a href="/faqs.html">FAQs</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Worcester's Premier Comedy Night</p>
+      <h1 class="h1">Welcome to The Lincoln<br>Comedy Club.</h1>
+      <p class="lead">Nationally touring headliners, New England favorites, and the best of Boston's comedy scene, live inside Worcester's historic Mechanics Hall.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#shows">See All Shows</a>
+        <a class="btn btn-outline" href="#alerts">Get Show Alerts</a>
+      </div>
+      <p class="hero-note">All shows 21+</p>
+    </div>
+  </section>
+
+  <section class="shows" id="shows" aria-labelledby="shows-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">On the calendar</p>
+          <h2 class="h2" id="shows-title">Upcoming Shows</h2>
+        </div>
+      </div>
+
+      <!-- Upcoming shows are loaded from data/shows.json.
+           Edit them by logging in at /admin (see README). -->
+      <ul class="show-grid" id="show-grid" aria-live="polite"></ul>
+      <p class="show-empty" id="show-empty" hidden>New shows are coming soon. <a href="#alerts">Get show alerts</a> to hear about them first.</p>
+      <noscript><p class="show-empty">Turn on JavaScript to see upcoming shows, or <a href="/contact.html">contact us</a> for the schedule.</p></noscript>
+    </div>
+  </section>
+
+  <section class="alerts" id="alerts" aria-labelledby="alerts-title">
+    <div class="wrap">
+      <div class="alerts-copy">
+        <h2 class="h2" id="alerts-title">Hear about shows before anyone else.</h2>
+        <p class="lead">Presale access, lineup announcements and first pick of seats. One email a month, no spam.</p>
+      </div>
+
+      <!-- Netlify collects these signups automatically (Site > Forms > show-alerts). -->
+      <form class="form" name="show-alerts" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="show-alerts">
+        <p class="hidden-field"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+        <div class="form-row">
+          <label class="field">First name
+            <input class="input" type="text" name="first-name" placeholder="Your name" autocomplete="given-name">
+          </label>
+          <label class="field">Email address
+            <input class="input" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+          </label>
+        </div>
+        <button class="btn btn-primary" type="submit">Subscribe</button>
+        <div class="follow">
+          <span>Follow us</span>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="venue" id="venue" aria-labelledby="venue-title">
+    <div class="wrap">
+      <div class="venue-copy">
+        <p class="eyebrow">The venue</p>
+        <h2 class="h2" id="venue-title">Stand-up in Worcester's grandest hall.</h2>
+        <p>Mechanics Hall has been the heart of downtown Worcester since 1857. The Lincoln Comedy Club brings live stand-up to its intimate 250-seat room, close enough to catch every look and every laugh.</p>
+        <address class="address">
+          <strong>Mechanics Hall</strong>
+          <span>321 Main Street, Worcester, MA 01608</span>
+        </address>
+      </div>
+      <img class="venue-photo" src="images/venue-room.jpg" alt="The room on show night: audience at candlelit tables facing a spotlit stage" width="1800" height="1350" loading="lazy">
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo-name" href="/">THE LINCOLN</a>
+        <p>Comedy Club at Mechanics Hall<br>321 Main Street, Worcester, MA 01608</p>
+      </div>
+      <div class="footer-col">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="/#shows">Upcoming Shows</a></li>
+          <li><a href="/#venue">Venue Info</a></li>
+          <li><a href="/faqs.html">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Follow</h2>
+        <ul>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="/contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="year">2026</span> The Lincoln Comedy Club at Mechanics Hall. All rights reserved.</span>
+      <ul>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="js/menu.js"></script>
+<script src="js/shows.js"></script>
+</body>
+</html>

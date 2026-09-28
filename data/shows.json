@@ -1,0 +1,28 @@
+{
+  "shows": [
+    {
+      "title": "Thursday Night Showcase",
+      "comedian": "Sam Jay",
+      "date": "2026-10-15T19:30",
+      "status": "On Sale",
+      "poster": "/images/shows/sam-jay.webp",
+      "ticket_url": ""
+    },
+    {
+      "title": "The Headliner Series",
+      "comedian": "Set Roulette",
+      "date": "2026-11-19T19:30",
+      "status": "On Sale",
+      "poster": "/images/shows/set-roulette.webp",
+      "ticket_url": ""
+    },
+    {
+      "title": "Holiday Comedy Night",
+      "comedian": "Nick Alex",
+      "date": "2026-12-17T19:30",
+      "status": "Coming Soon",
+      "poster": "/images/shows/nick-alex.webp",
+      "ticket_url": ""
+    }
+  ]
+}

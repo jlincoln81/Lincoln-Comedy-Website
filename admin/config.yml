@@ -1,0 +1,77 @@
+# Show Manager settings for The Lincoln Comedy Club website.
+#
+# BEFORE FIRST USE: change the "repo" line below to your GitHub
+# username and repository name, for example:  jonlincoln/lincoln-comedy-website
+
+backend:
+  name: github
+  repo: YOUR-GITHUB-USERNAME/lincoln-comedy-website
+  branch: main
+
+site_url: https://thelincolncomedy.com   # change to your live address
+display_url: https://thelincolncomedy.com
+
+# Uploaded posters are saved here and published with the site.
+media_folder: images/shows
+public_folder: /images/shows
+
+collections:
+  - name: schedule
+    label: Show Schedule
+    editor:
+      preview: false
+    files:
+      - name: shows
+        label: Upcoming Shows
+        file: data/shows.json
+        format: json
+        description: >
+          Add, edit or remove shows. They appear on the homepage in date order,
+          and each show disappears automatically the day after it happens.
+          Click Publish when you're done — the website updates in about a minute.
+        fields:
+          - name: shows
+            label: Shows
+            label_singular: Show
+            widget: list
+            summary: "{{fields.title}} — {{fields.date}}"
+            add_to_top: true
+            fields:
+              - name: title
+                label: Show title
+                widget: string
+                hint: "Shown under the poster, e.g. Thursday Night Showcase"
+
+              - name: comedian
+                label: Headliner name
+                widget: string
+                required: false
+                hint: "Used to describe the poster for screen readers and search engines"
+
+              - name: date
+                label: Date and showtime
+                widget: datetime
+                format: "YYYY-MM-DDTHH:mm"
+                date_format: "MMM D, YYYY"
+                time_format: "h:mm A"
+                picker_utc: false
+
+              - name: status
+                label: Ticket status
+                widget: select
+                options: ["On Sale", "Coming Soon", "Sold Out"]
+                default: "On Sale"
+                hint: "On Sale shows a Buy Tickets button. Coming Soon shows a Notify Me button that points to the email signup."
+
+              - name: poster
+                label: Show poster
+                widget: image
+                choose_url: false
+                hint: "Best at a 4:5 ratio, e.g. 960 × 1200 pixels (JPG, PNG or WEBP)"
+
+              - name: ticket_url
+                label: Buy Tickets link
+                widget: string
+                required: false
+                pattern: ['^$|^https?://', 'Paste the full link, starting with https://']
+                hint: "Paste the show's page on mechanicshall.org"
