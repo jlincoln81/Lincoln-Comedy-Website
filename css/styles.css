@@ -1,5 +1,5 @@
 /* =========================================================
-   The Lincoln Comedy Club at Mechanics Hall
+   The Monkey Wrench Comedy Club at Mechanics Hall
    Shared styles for every page.
    To change the gold accent everywhere, edit --accent below.
    ========================================================= */
@@ -107,6 +107,7 @@ a:hover { color: var(--accent); }
 /* ---------- Home: hero ---------- */
 .hero .wrap { padding-top: 96px; padding-bottom: 48px; display: flex; flex-direction: column; gap: 28px; }
 .hero .eyebrow { font-size: 19px; }
+.hero .h1 { font-size: clamp(40px, 5.4vw, 78px); }
 .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
 .hero-note { margin: 0; font-size: 15px; color: var(--text-muted); letter-spacing: 0.04em; }
 
@@ -231,7 +232,7 @@ a:hover { color: var(--accent); }
   html { scroll-padding-top: 76px; }
 
   .site-header .wrap { height: 68px; }
-  .logo-name { font-size: 21px; }
+  .logo-name { font-size: 19px; letter-spacing: 0.06em; }
   .logo-sub { font-size: 10px; letter-spacing: 0.16em; }
 
   .menu-toggle { display: flex; }

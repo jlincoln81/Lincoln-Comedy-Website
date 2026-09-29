@@ -1,4 +1,4 @@
-# The Lincoln Comedy Club — Website
+# The Monkey Wrench Comedy Club — Website
 
 Every page adjusts automatically for phones, tablets, and desktops. Upcoming shows are managed from a login page at **yoursite.com/admin**.
 
