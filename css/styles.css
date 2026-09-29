@@ -141,6 +141,7 @@ a:hover { color: var(--accent); }
 .alerts { background: var(--surface); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .alerts .wrap { padding-top: 88px; padding-bottom: 88px; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
 .alerts-copy { display: flex; flex-direction: column; gap: 18px; }
+.alerts .form { order: -1; } /* desktop: signup fields on the left, text on the right */
 .alerts-copy .h2 { font-size: clamp(32px, 3.6vw, 52px); }
 
 .form { display: flex; flex-direction: column; gap: 18px; }
@@ -172,6 +173,14 @@ a:hover { color: var(--accent); }
 .address strong { font-weight: 700; }
 .address span { color: var(--text-soft); }
 .venue-photo { width: 100%; height: 520px; object-fit: cover; object-position: 60% 50%; border-radius: 20px; }
+
+/* ---------- Home: story (Why The Monkey Wrench?) ---------- */
+.story { background: var(--bg); border-bottom: 1px solid var(--line); }
+.story .wrap { padding-top: 88px; padding-bottom: 88px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 80px; align-items: center; }
+.story-copy { display: flex; flex-direction: column; gap: 22px; max-width: 640px; }
+.story-copy .h2 { font-size: clamp(34px, 3.9vw, 56px); line-height: 1.04; }
+.story-copy p { margin: 0; font-size: 19px; line-height: 1.6; color: var(--text-soft); }
+.story-image { justify-self: center; width: auto; height: 560px; max-width: 100%; border-radius: 14px; box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45); }
 
 /* ---------- Inner page intro (FAQ, Contact) ---------- */
 .page-intro { border-bottom: 1px solid var(--line); }
@@ -275,6 +284,7 @@ a:hover { color: var(--accent); }
   .show-title { font-size: 21px; }
 
   .alerts .wrap { grid-template-columns: 1fr; padding-top: 48px; padding-bottom: 48px; gap: 24px; }
+  .alerts .form { order: 0; } /* mobile: text first, then the fields */
   .form-row { grid-template-columns: 1fr; }
   .alerts .btn, .contact .btn { width: 100%; }
   .form-foot { flex-direction: column; align-items: flex-start; gap: 12px; }
@@ -282,6 +292,10 @@ a:hover { color: var(--accent); }
   .venue .wrap { grid-template-columns: 1fr; padding-top: 48px; padding-bottom: 56px; gap: 24px; }
   .venue-copy p { font-size: 17px; }
   .venue-photo { height: 260px; object-position: 68% 50%; border-radius: 16px; }
+
+  .story .wrap { grid-template-columns: 1fr; padding-top: 48px; padding-bottom: 56px; gap: 28px; }
+  .story-copy p { font-size: 17px; }
+  .story-image { height: auto; width: 100%; max-width: 360px; justify-self: center; }
 
   .page-intro .wrap { padding-top: 48px; padding-bottom: 36px; gap: 16px; }
   .faq .wrap { padding-top: 40px; padding-bottom: 56px; gap: 44px; }
