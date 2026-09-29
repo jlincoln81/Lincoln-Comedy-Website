@@ -8,8 +8,8 @@ backend:
   repo: jlincoln81/lincoln-comedy-website
   branch: main
 
-site_url: https://lincolncomedy.netlify.app   # change to your live address
-display_url: https://lincolncomedy.netlify.app
+site_url: https://monkeywrenchcomedy.com
+display_url: https://monkeywrenchcomedy.com
 
 # Uploaded posters are saved here and published with the site.
 media_folder: images/shows

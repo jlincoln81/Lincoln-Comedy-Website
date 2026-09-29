@@ -1,6 +1,6 @@
 # The Monkey Wrench Comedy Club — Website
 
-Every page adjusts automatically for phones, tablets, and desktops. Upcoming shows are managed from a login page at **yoursite.com/admin**.
+Every page adjusts automatically for phones, tablets, and desktops. Upcoming shows are managed from a login page at **monkeywrenchcomedy.com/admin**.
 
 ## What's in the folder
 
@@ -37,7 +37,7 @@ From now on, the site republishes automatically whenever something changes on Gi
 ### 3. Let the Show Manager log in with GitHub
 1. On GitHub: click your profile picture → **Settings → Developer settings → OAuth Apps → New OAuth App**.
    - Application name: `Lincoln Show Manager`
-   - Homepage URL: your site address (e.g. `https://yoursite.netlify.app`)
+   - Homepage URL: your site address (e.g. `https://monkeywrenchcomedy.com`)
    - Authorization callback URL: `https://api.netlify.com/auth/done`
 2. Click **Register application**, copy the **Client ID**, then click **Generate a new client secret** and copy it.
 3. In Netlify: **Project configuration → Access & security → OAuth → Install a provider → GitHub**. Paste the Client ID and secret and save.
@@ -50,7 +50,7 @@ repo: YOUR-GITHUB-USERNAME/lincoln-comedy-website
 to your actual GitHub username. Also change `site_url` and `display_url` to your live address. Click **Commit changes**.
 
 ### 5. Log in
-Go to **yoursite.com/admin**, click **Login with GitHub**, and approve. You'll see **Show Schedule → Upcoming Shows**.
+Go to **monkeywrenchcomedy.com/admin**, click **Login with GitHub**, and approve. You'll see **Show Schedule → Upcoming Shows**.
 
 ## Managing shows
 
