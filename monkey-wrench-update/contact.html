@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | The Monkey Wrench Comedy Club at Mechanics Hall</title>
+  <meta name="description" content="Questions about a show, group nights out or performing at The Monkey Wrench Comedy Club? Send us a message.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎤</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Karla:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="/" aria-label="The Monkey Wrench Comedy Club, home">
+      <span class="logo-name">THE MONKEY WRENCH</span>
+      <span class="logo-sub">Comedy Club at Mechanics Hall</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="main-nav" aria-label="Main">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/#shows">Upcoming Shows</a></li>
+        <li><a href="/#venue">Venue Info</a></li>
+        <li><a href="/faqs.html">FAQs</a></li>
+        <li><a href="/contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-intro">
+    <div class="wrap">
+      <p class="eyebrow">Get in touch</p>
+      <h1 class="h1">Contact Us</h1>
+      <p class="lead">Questions about a show, planning a group night out, or interested in performing? Send us a note and we'll get back to you as soon as we can.</p>
+    </div>
+  </section>
+
+  <div class="contact">
+    <div class="wrap">
+
+      <!-- Netlify collects these messages automatically (Site > Forms > contact).
+           Turn on email notifications in Netlify to get each message in your inbox. -->
+      <form class="form" name="contact" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact">
+        <p class="hidden-field"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+        <div class="form-row">
+          <label class="field">Full name *
+            <input class="input" type="text" name="name" placeholder="Your name" autocomplete="name" required>
+          </label>
+          <label class="field">Email address *
+            <input class="input" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+          </label>
+          <label class="field"><span>Phone <span class="opt">(optional)</span></span>
+            <input class="input" type="tel" name="phone" placeholder="(508) 555-0123" autocomplete="tel">
+          </label>
+          <label class="field">What's this about?
+            <select class="select" name="topic">
+              <option>General question</option>
+              <option>Tickets or an existing order</option>
+              <option>Group or private event</option>
+              <option>Comedian booking</option>
+              <option>Press and media</option>
+              <option>Lost and found</option>
+            </select>
+          </label>
+        </div>
+        <label class="field">Message *
+          <textarea class="textarea" name="message" rows="7" placeholder="How can we help?" required></textarea>
+        </label>
+        <label class="check"><input type="checkbox" name="show-alerts" value="yes">Also sign me up for show alerts and presales</label>
+        <div class="form-foot">
+          <button class="btn btn-primary" type="submit">Send Message</button>
+          <span class="muted">* Required</span>
+        </div>
+      </form>
+
+      <aside aria-label="Venue details">
+        <div class="info-block">
+          <span class="info-label">Visit</span>
+          <span class="info-main">Mechanics Hall</span>
+          <p>321 Main Street<br>Worcester, MA 01608</p>
+        </div>
+        <div class="info-block">
+          <span class="info-label">Box office</span>
+          <a class="info-main" href="tel:5087520888">508-752-0888</a>
+          <p>Mechanics Hall Box Office, for ticket and accessibility help</p>
+        </div>
+        <div class="info-block">
+          <span class="info-label">Follow</span>
+          <div class="follow">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo-name" href="/">THE MONKEY WRENCH</a>
+        <p>Comedy Club at Mechanics Hall<br>321 Main Street, Worcester, MA 01608</p>
+      </div>
+      <div class="footer-col">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="/#shows">Upcoming Shows</a></li>
+          <li><a href="/#venue">Venue Info</a></li>
+          <li><a href="/faqs.html">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Follow</h2>
+        <ul>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="/contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="year">2026</span> The Monkey Wrench Comedy Club at Mechanics Hall. All rights reserved.</span>
+      <ul>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="js/menu.js"></script>
+</body>
+</html>
