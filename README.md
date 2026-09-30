@@ -1,4 +1,4 @@
-# The Monkey Wrench Comedy Club — Website
+# Monkey Wrench Comedy — Website
 
 Every page adjusts automatically for phones, tablets, and desktops. Upcoming shows are managed from a login page at **monkeywrenchcomedy.com/admin**.
 
@@ -76,8 +76,6 @@ In Netlify, **Forms → Form detection** must be enabled. Set up email alerts un
 - **Buy Tickets links** for each show.
 - **Posters:** the three current posters belong to Empire Comedy Club (Portland, ME). Replace them with your own, and get permission from each comic or their team to use their photo.
 - **Lost and found email** in `faqs.html` (search for `[EMAIL]`).
-- **Instagram and Facebook links:** search for `instagram.com/` and `facebook.com/`.
-- **Terms and Privacy** footer links.
 
 ## Changing the look
 
