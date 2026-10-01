@@ -1,27 +1,11 @@
 {
   "shows": [
     {
-      "title": "The Headliner Series",
-      "comedian": "Set Roulette",
-      "date": "2026-10-01T19:30",
+      "title": "Jimmy Dunn",
+      "comedian": "Jimmy Dunn",
+      "date": "2026-10-23T20:00",
       "status": "On Sale",
-      "poster": "/images/shows/eventfcd5932c-aea0-47ea-bcc3-2417a94e0eba.webp",
-      "ticket_url": "https://mechanicshall.org/event/club-321-featuring-mark-mandeville-raianne-richards/#get-tickets"
-    },
-    {
-      "title": "Robert Kelly",
-      "comedian": "Sam Jay",
-      "date": "2026-11-18T23:00",
-      "status": "Sold Out",
-      "poster": "/images/shows/sam-jay.webp",
-      "ticket_url": ""
-    },
-    {
-      "title": "Holiday Comedy Night",
-      "comedian": "Nick Alex",
-      "date": "2026-12-17T19:30",
-      "status": "Coming Soon",
-      "poster": "/images/shows/nick-alex.webp",
+      "poster": "/images/shows/image0-1-.png",
       "ticket_url": ""
     }
   ]
