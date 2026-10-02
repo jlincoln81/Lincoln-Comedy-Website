@@ -42,6 +42,10 @@
 
     var meta = el('div', { 'class': 'show-meta' });
     meta.appendChild(el('h3', { 'class': 'show-title' }, show.title));
+    // Headliner on its own line (skipped if it's the same as the title)
+    if (show.comedian && show.comedian.trim() && show.comedian.trim().toLowerCase() !== (show.title || '').trim().toLowerCase()) {
+      meta.appendChild(el('p', { 'class': 'show-headliner' }, show.comedian.trim()));
+    }
     if (show._date) meta.appendChild(el('p', { 'class': 'show-when' }, formatDate(show._date)));
     li.appendChild(meta);
 

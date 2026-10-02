@@ -40,13 +40,13 @@ collections:
               - name: title
                 label: Show title
                 widget: string
-                hint: "Shown under the poster, e.g. Thursday Night Showcase"
+                hint: "Shown in bold under the poster, e.g. Thursday Night Showcase"
 
               - name: comedian
                 label: Headliner name
                 widget: string
                 required: false
-                hint: "Used to describe the poster for screen readers and search engines"
+                hint: "Shown under the show title (not bold). Leave blank or match the title to hide it."
 
               - name: date
                 label: Date and showtime
