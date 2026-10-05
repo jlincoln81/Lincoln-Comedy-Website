@@ -104,16 +104,14 @@ src="https://www.facebook.com/tr?id=2172629367018919&amp;ev=PageView&amp;noscrip
         <p class="lead">Presale access, lineup announcements and first pick of seats. One email a month, no spam.</p>
       </div>
 
-      <!-- Netlify collects these signups automatically (Site > Forms > show-alerts). -->
-      <form class="form" name="show-alerts" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
-        <input type="hidden" name="form-name" value="show-alerts">
-        <p class="hidden-field"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+      <!-- Signups go to Kit (form 10005433). After subscribing, Kit sends people to /thanks.html. -->
+      <form class="form" name="show-alerts" method="POST" action="https://app.kit.com/forms/10005433/subscriptions">
         <div class="form-row">
           <label class="field">First name
-            <input class="input" type="text" name="first-name" placeholder="Your name" autocomplete="given-name">
+            <input class="input" type="text" name="fields[first_name]" placeholder="Your name" autocomplete="given-name">
           </label>
           <label class="field">Email address
-            <input class="input" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+            <input class="input" type="email" name="email_address" placeholder="you@example.com" autocomplete="email" required>
           </label>
         </div>
         <button class="btn btn-primary" type="submit">Subscribe</button>
