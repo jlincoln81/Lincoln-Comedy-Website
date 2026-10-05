@@ -1,6 +1,13 @@
 {
   "shows": [
     {
+      "status": "Coming Soon",
+      "title": "Jon Fisch",
+      "comedian": "Seen on Comedy Central, Stephen Colbert, HBO and more.",
+      "date": "2026-11-27T17:53",
+      "poster": "/images/shows/jon-fisch-ad-nov-27-.jpg"
+    },
+    {
       "title": "Jimmy Dunn",
       "comedian": "Featured on David Letterman, CONAN, Comedy Central and Netflix!",
       "date": "2026-10-23T20:00",
