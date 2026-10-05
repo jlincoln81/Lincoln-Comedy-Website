@@ -50,7 +50,12 @@
     li.appendChild(meta);
 
     if (status === 'On Sale' && show.ticket_url) {
-      li.appendChild(el('a', { 'class': 'btn btn-primary', href: show.ticket_url, target: '_blank', rel: 'noopener' }, 'Buy Tickets'));
+      var buy = el('a', { 'class': 'btn btn-primary', href: show.ticket_url, target: '_blank', rel: 'noopener' }, 'Buy Tickets');
+      // Meta Pixel: count a Buy Tickets click as a conversion
+      buy.addEventListener('click', function () {
+        if (window.fbq) fbq('track', 'InitiateCheckout', { content_name: show.title, content_category: 'Comedy show' });
+      });
+      li.appendChild(buy);
     } else if (status === 'Sold Out') {
       li.appendChild(el('span', { 'class': 'btn btn-outline btn-disabled', 'aria-disabled': 'true' }, 'Sold Out'));
     } else {
