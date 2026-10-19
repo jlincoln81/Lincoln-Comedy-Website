@@ -1,5 +1,6 @@
 // Website form extras:
 //  - Meta Pixel events: show alerts signup -> Lead, contact form -> Contact
+//  - TikTok Pixel events: show alerts signup -> CompleteRegistration, contact form -> Contact
 //  - Contact form: if "Also sign me up for show alerts" is checked,
 //    the person is also added to the Kit email list (form 10005433).
 (function () {
@@ -10,6 +11,7 @@
     if (!form) return;
     form.addEventListener('submit', function () {
       if (window.fbq) fbq('track', eventName);
+      if (window.ttq) ttq.track(eventName === 'Lead' ? 'CompleteRegistration' : 'Contact');
     });
   }
   hook('show-alerts', 'Lead');
@@ -35,5 +37,6 @@
       try { fetch(KIT_URL, { method: 'POST', body: data, mode: 'no-cors', keepalive: true }); } catch (e) {}
     }
     if (window.fbq) fbq('track', 'Lead');
+    if (window.ttq) ttq.track('CompleteRegistration');
   });
 })();
