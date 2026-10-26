@@ -111,9 +111,9 @@ a:hover { color: var(--accent); }
   background-image:
     linear-gradient(180deg, rgba(20, 18, 16, 0) 55%, rgba(20, 18, 16, 1) 100%),
     linear-gradient(90deg, rgba(20, 18, 16, 0.92) 0%, rgba(20, 18, 16, 0.8) 45%, rgba(20, 18, 16, 0.45) 100%),
-    url('../images/venue-room.jpg');
+    url('../images/hero-show.jpg');
   background-size: cover;
-  background-position: center 40%;
+  background-position: center 35%;
 }
 .hero .wrap { padding-top: 112px; padding-bottom: 96px; display: flex; flex-direction: column; gap: 28px; }
 .hero .eyebrow { font-size: 19px; }
@@ -173,7 +173,7 @@ a:hover { color: var(--accent); }
 .address { font-style: normal; display: flex; flex-direction: column; gap: 4px; font-size: 18px; line-height: 1.5; }
 .address strong { font-weight: 700; }
 .address span { color: var(--text-soft); }
-.venue-photo { width: 100%; height: 520px; object-fit: cover; object-position: 60% 50%; border-radius: 20px; }
+.venue-photo { width: 100%; height: 520px; object-fit: cover; object-position: 57% 50%; border-radius: 20px; }
 
 /* ---------- Home: story (Why The Monkey Wrench?) ---------- */
 .story { background: var(--bg); border-bottom: 1px solid var(--line); }
@@ -270,8 +270,8 @@ a:hover { color: var(--accent); }
   .hero {
     background-image:
       linear-gradient(180deg, rgba(20, 18, 16, 0.78) 0%, rgba(20, 18, 16, 0.82) 70%, rgba(20, 18, 16, 1) 100%),
-      url('../images/venue-room.jpg');
-    background-position: 72% center;
+      url('../images/hero-show.jpg');
+    background-position: 80% center;
   }
   .hero .wrap { padding-top: 56px; padding-bottom: 56px; gap: 20px; }
   .hero-actions { flex-direction: column; gap: 12px; }
@@ -292,7 +292,7 @@ a:hover { color: var(--accent); }
 
   .venue .wrap { grid-template-columns: 1fr; padding-top: 48px; padding-bottom: 56px; gap: 24px; }
   .venue-copy p:not(.eyebrow) { font-size: 17px; }
-  .venue-photo { height: 260px; object-position: 68% 50%; border-radius: 16px; }
+  .venue-photo { height: 260px; object-position: 57% 50%; border-radius: 16px; }
 
   .story .wrap { grid-template-columns: 1fr; padding-top: 48px; padding-bottom: 56px; gap: 28px; }
   .story-copy p { font-size: 17px; }
