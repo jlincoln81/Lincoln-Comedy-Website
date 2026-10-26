@@ -173,7 +173,7 @@ a:hover { color: var(--accent); }
 .address { font-style: normal; display: flex; flex-direction: column; gap: 4px; font-size: 18px; line-height: 1.5; }
 .address strong { font-weight: 700; }
 .address span { color: var(--text-soft); }
-.venue-photo { width: 100%; height: 520px; object-fit: cover; object-position: 57% 50%; border-radius: 20px; }
+.venue-photo { width: 100%; height: 520px; object-fit: cover; object-position: 60% 50%; border-radius: 20px; }
 
 /* ---------- Home: story (Why The Monkey Wrench?) ---------- */
 .story { background: var(--bg); border-bottom: 1px solid var(--line); }
@@ -292,7 +292,7 @@ a:hover { color: var(--accent); }
 
   .venue .wrap { grid-template-columns: 1fr; padding-top: 48px; padding-bottom: 56px; gap: 24px; }
   .venue-copy p:not(.eyebrow) { font-size: 17px; }
-  .venue-photo { height: 260px; object-position: 57% 50%; border-radius: 16px; }
+  .venue-photo { height: 260px; object-position: 60% 50%; border-radius: 16px; }
 
   .story .wrap { grid-template-columns: 1fr; padding-top: 48px; padding-bottom: 56px; gap: 28px; }
   .story-copy p { font-size: 17px; }
