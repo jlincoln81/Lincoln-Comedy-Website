@@ -1,12 +1,10 @@
 {
   "shows": [
     {
-      "title": "Jimmy Dunn",
-      "comedian": "Also featuring comedians Jim Bowes and Sarah Fitz",
-      "date": "2026-10-23T20:00",
-      "status": "On Sale",
-      "poster": "/images/shows/late-show-tribute-social-post-2-.png",
-      "ticket_url": "https://mechanicshall.org/event/jimmy-dunn/"
+      "status": "Coming Soon",
+      "title": "Lenny Clarke",
+      "date": "2027-04-23T20:00",
+      "poster": "/images/shows/live-in-worcester-event-poster.png"
     },
     {
       "status": "On Sale",
