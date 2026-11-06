@@ -1,10 +1,11 @@
 {
   "shows": [
     {
-      "status": "Coming Soon",
+      "status": "On Sale",
       "title": "Lenny Clarke",
       "date": "2027-04-23T20:00",
-      "poster": "/images/shows/live-in-worcester-event-poster.png"
+      "poster": "/images/shows/live-in-worcester-event-poster.png",
+      "ticket_url": "https://mechanicshall.org/event/lenny-clarke/"
     },
     {
       "status": "On Sale",
