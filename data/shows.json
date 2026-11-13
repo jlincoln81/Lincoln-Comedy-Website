@@ -1,6 +1,13 @@
 {
   "shows": [
     {
+      "status": "Coming Soon",
+      "title": "Boston Comedy Showcase",
+      "comedian": "Featuring Dan Crohn, Harrison Stebbins, Stephen Donovan and Dan Donahue",
+      "date": "2026-12-17T07:30",
+      "poster": "/images/shows/boston-comedy-showcase-1-.png"
+    },
+    {
       "status": "On Sale",
       "title": "Lenny Clarke",
       "date": "2027-04-23T20:00",
