@@ -1,11 +1,12 @@
 {
   "shows": [
     {
-      "status": "Coming Soon",
+      "status": "On Sale",
       "title": "Boston Comedy Showcase",
       "comedian": "Featuring Dan Crohn, Harrison Stebbins, Stephen Donovan and Dan Donahue",
       "date": "2026-12-17T07:30",
-      "poster": "/images/shows/boston-comedy-showcase-2-.png"
+      "poster": "/images/shows/boston-comedy-showcase-2-.png",
+      "ticket_url": "https://mechanicshall.org/event/boston-comedy-showcase/"
     },
     {
       "status": "On Sale",
