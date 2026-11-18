@@ -1,6 +1,21 @@
 {
   "shows": [
     {
+      "status": "Coming Soon",
+      "title": "Bobcat Goldthwait",
+      "comedian": "Seen on HBO, The Tonight Show, Jimmy Kimmel Live and more!",
+      "date": "2027-03-14T18:00",
+      "poster": "/images/shows/bobcat-goldthwait-in-worcester.png"
+    },
+    {
+      "status": "On Sale",
+      "title": "Jon Fisch",
+      "comedian": "Also featuring comedians Dave Rattigan and AJ Hapenny",
+      "date": "2026-11-27T20:00",
+      "poster": "/images/shows/jon-fisch-ad-nov-27-.jpg",
+      "ticket_url": "https://mechanicshall.org/event/jon-fisch/"
+    },
+    {
       "status": "On Sale",
       "title": "Boston Comedy Showcase",
       "comedian": "Featuring Dan Crohn, Harrison Stebbins, Stephen Donovan and Dan Donahue",
@@ -15,14 +30,6 @@
       "poster": "/images/shows/live-in-worcester-event-poster.png",
       "ticket_url": "https://mechanicshall.org/event/lenny-clarke/",
       "comedian": "Seen on The Tonight Show with Jimmy Fallon, Jimmy Kimmel Live! and Comedy Central."
-    },
-    {
-      "status": "On Sale",
-      "title": "Jon Fisch",
-      "comedian": "Also featuring comedians Dave Rattigan and AJ Hapenny",
-      "date": "2026-11-27T20:00",
-      "poster": "/images/shows/jon-fisch-ad-nov-27-.jpg",
-      "ticket_url": "https://mechanicshall.org/event/jon-fisch/"
     }
   ]
 }
