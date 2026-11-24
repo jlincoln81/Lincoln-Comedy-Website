@@ -1,11 +1,12 @@
 {
   "shows": [
     {
-      "status": "Coming Soon",
+      "status": "On Sale",
       "title": "Bobcat Goldthwait",
       "comedian": "Seen on HBO, The Tonight Show, Jimmy Kimmel Live and more!",
       "date": "2027-03-14T18:00",
-      "poster": "/images/shows/bobcat-goldthwait-in-worcester.png"
+      "poster": "/images/shows/bobcat-goldthwait-in-worcester.png",
+      "ticket_url": "https://mechanicshall.org/event/bobcat-goldthwait/"
     },
     {
       "status": "On Sale",
